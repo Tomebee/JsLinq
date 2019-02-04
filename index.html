@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Demo</title>
+    </head>
+    <body>
+        <script src="dist/library.web.js"></script>
+        <script>
+            var array = [{name: 'tomek'},{name: 'nietomek'}];
+            var linq = array.where(x => x.name == 'tomek').select(x => ({newName: x.name})).any(x => x.newName == 'abc');
+            console.log(linq);
+        </script>
+    </body>
+</html>
