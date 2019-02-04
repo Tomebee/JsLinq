@@ -1,3 +1,3 @@
 export function getLibName() {
-  return "Library";
+  return "JsLinq";
 }

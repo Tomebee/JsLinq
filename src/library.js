@@ -1,5 +1,3 @@
-import { getLibName } from "./utils";
-
 export default (function() {
   const checkNullOrEmptyArray = function(array) {
     if(!array || array.length < 1) {

@@ -105,9 +105,5 @@ function getBaseConfig(isProd) {
 }
 
 function buildLibraryOutputName(libraryDesc, isWeb, isProd){
-  if(isWeb){
-    return libraryDesc["dist-web"] || [libraryDesc.name, 'web', (isProd ? 'min.js' : 'js')].join('.');
-  } else {
-    return libraryDesc["dist-node"] || [libraryDesc.name, (isProd ? 'min.js' : 'js')].join('.');
-  }
+    return [libraryDesc.name, (isProd ? 'min.js' : 'js')].join('.');
 }

@@ -75,10 +75,10 @@
     "webpack-node-externals": "^0.4.1"
   },
   "library": {
-    "name": "Library",
+    "name": "JsLinq",
     "entry": "library.js",
-    "dist-node": "library.js",
-    "dist-web": "library.web.js",
+    "dist-node": "JsLinq.js",
+    "dist-web": "JsLinq.web.js",
     "bundle-node": true
   }
 }
